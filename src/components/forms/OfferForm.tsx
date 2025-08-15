@@ -72,7 +72,8 @@ const OfferForm = ({ offer, onSave, onCancel }: { offer?: Offer; onSave: (offer:
         >
           <option value="candidature">Candidature</option>
           <option value="manifestation">Manifestation</option>
-          <option value="appel_d_offre">Appel d'Offre</option>
+          <option value="appel_d_offre_service">Appel d'Offre (Service)</option>
+          <option value="appel_d_offre_equipement">Appel d'Offre (Equipement)</option>
           <option value="consultation">Consultation</option>
         </select>
       </div>

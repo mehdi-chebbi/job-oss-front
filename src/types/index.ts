@@ -7,7 +7,7 @@ export type User = {
 
 export type Offer = {
   id: number;
-  type: 'candidature' | 'manifestation' | 'appel_d_offre' | 'consultation';
+  type: 'candidature' | 'manifestation' | 'appel_d_offre_service' | 'appel_d_offre_equipement' | 'consultation';
   title: string;
   description: string;
   country: string;

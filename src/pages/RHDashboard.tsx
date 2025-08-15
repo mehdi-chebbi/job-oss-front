@@ -776,12 +776,14 @@ const RHDashboard = () => {
                                 <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ml-2 ${
                                   app.offer_type === 'candidature' ? 'bg-blue-100 text-blue-800' :
                                   app.offer_type === 'manifestation' ? 'bg-purple-100 text-purple-800' :
-                                  app.offer_type === 'appel_d_offre' ? 'bg-yellow-100 text-yellow-800' :
+                                  app.offer_type === 'appel_d_offre_service' ? 'bg-yellow-100 text-yellow-800' :
+                                  app.offer_type === 'appel_d_offre_equipement' ? 'bg-orange-100 text-orange-800' :
                                   'bg-green-100 text-green-800'
                                 }`}>
                                   {app.offer_type === 'candidature' ? 'Candidature' :
                                    app.offer_type === 'manifestation' ? 'Manifestation' :
-                                   app.offer_type === 'appel_d_offre' ? "Appel d'Offre" :
+                                   app.offer_type === 'appel_d_offre_service' ? "Appel d'Offre (Service)" :
+                                   app.offer_type === 'appel_d_offre_equipement' ? "Appel d'Offre (Equipement)" :
                                    'Consultation'}
                                 </span>
                               </div>

@@ -46,7 +46,7 @@ const ApplicationForm = ({ offerId, offerType, onClose }: { offerId: number; off
     }
     
     const additionalRequiredFields: string[] = [];
-    if (['manifestation', 'appel_d_offre', 'consultation'].includes(offerType)) {
+    if (['manifestation', 'appel_d_offre_service', 'appel_d_offre_equipement', 'consultation'].includes(offerType)) {
       additionalRequiredFields.push(
         'declaration_sur_honneur',
         'fiche_de_referencement',
@@ -122,7 +122,7 @@ const ApplicationForm = ({ offerId, offerType, onClose }: { offerId: number; off
     );
   }
   
-  const requireAdditionalFields = ['manifestation', 'appel_d_offre', 'consultation'].includes(offerType);
+  const requireAdditionalFields = ['manifestation', 'appel_d_offre_service', 'appel_d_offre_equipement', 'consultation'].includes(offerType);
   
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
